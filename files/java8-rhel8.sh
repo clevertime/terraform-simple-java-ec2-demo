@@ -9,7 +9,7 @@ systemctl start amazon-ssm-agent
 yum install -y java-1.8.0-openjdk-devel
 
 # awscli install
-dnf install python3-pip
+dnf install -y python3-pip
 pip3 install awscli
 export PATH="/usr/local/bin:$PATH"
 
@@ -17,4 +17,5 @@ export PATH="/usr/local/bin:$PATH"
 dnf install -y unzip
 
 # download code
-aws s3 cp s3://${bucket}/${key} /opt
+aws s3 cp s3://${bucket}/${key} /opt/artifact.zip
+unzip artifact.zip
