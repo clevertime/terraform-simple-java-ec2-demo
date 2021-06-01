@@ -20,7 +20,7 @@ module "ec2" {
 2. `terraform apply`
 
 3. Wait for Instance to Boot and then Connect via Systems Manager: Session Manager
-[!step3](./images/step3.png)
+![!step3](./images/step3.png)
 
 4. Navigate to folder where artifact was downloaded and run program.
-[!step4](./images/step4.png)
+![step4](./images/step4.png)
